@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>BIBLIOTECA VIRTUAL</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 10;  <!-- espacio externo al rededor de los elementos
+            padding: 10;  <!-- espacio entre el borde del elemento y su contenido
+            }
+        header, footer {
+            background-color: #004080;
+            color: white;
+            text-align: right;
+            padding: 15px 10px;
+        }
+
+        h1, h2, h3 {
+            margin: 5px;
+        }
+        hr {
+            height: 10px;
+            background-color: rgb(97, 3, 3);
+        }
+
+        .contenido {
+            padding: 20px;
+            text-align: center;
+        }
+
+        .recuadro {
+            border: 2px solid #004080;
+            padding: 20px;
+            margin: 30px auto;
+            max-width: 800px;
+            border-radius: 10px;
+        }
+
+        .recuadro h2 {
+            background-color: #004080;
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        .enlaces {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+        }
+
+        .enlace {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .enlace img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+            border: 2px solid #004080;
+            border-radius: 10px;
+        }
+
+        .enlace h3 {
+            margin-top: 10px;
+            color: #004080;
+        }
+
+        footer {
+            font-size: 14px;
+        }
+        .logo {
+            float: left;
+            width: 120px;
+            height: 120px;
+            margin-right: 10px;
+          }
+        .avatar {
+            float: right;
+            width: 200px;
+            height: 130px;
+            margin-left: 10px;
+          }
+
+        .copy {
+            float: right;
+            float:inline-end;
+            width: 100px;
+            height: 75px;
+            margin-left: 10px;
+          }
+        #titulo {
+            text-align: center;
+            color: rgb(196, 2, 2);
+           
+        }
+        #subtitulo {
+            text-align: center;
+            color: rgb(159, 215, 6);
+        }
+        #carrera {
+            text-align: center;
+            color: rgb(81, 5, 223);
+        }
+        .pie {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            flex-wrap: wrap;
+          }
+          .videoin {
+            position: relative;
+            overflow: hidden;
+            padding-top: 56,25%;
+            border: 3px solid red;
+          }  
+         .videoin video1{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 50%|;
+            height: 50%;
+          }  
+    </style>
+</head>
+<body>
+
+    <header>
+        <hr> 
+        <img src="unl logo.png" class="logo" alt="Logo UNL">
+        <img src="avatar.gif" class="avatar" alt="avatar">
+        <h1 id="titulo"> UNIVERSIDAD NACIONAL DE LOJA</h1>
+        <h2 id="carrera">Carrera de Pedagogía de las Ciencias Experimentales - Informática</h2>
+        <h2 id="carrera">Programación Web</h3>
+        <hr> 
+        <h2 id="subtitulo"> BIBLIOTECA VIRTUAL</h2>
+        <hr> 
+    </header>
+
+    <div class="contenido">
+
+        <!-- Panel de Programación Web -->
+        <div class="recuadro">
+            <h2>PROGRAMACIÓN WEB</h2>
+            <div class="enlaces">
+                <div class="enlace">
+                    <a href="#">
+                        <img src="GUIA.jpg" alt="Guía de Estudio">
+                        <h3>GUÍA DE ESTUDIO</h3>
+                    </a>
+                </div>
+                <div class="enlace">
+                    <a href="#">
+                        <img src="SILABO.jfif" alt="Sílabo">
+                        <h3>SÍLABO</h3>
+                    </a>
+                </div>
+                <div class="enlace">
+                    <a href="#">
+                        <img src="TEXTO.png" alt="Texto Base">
+                        <h3>TEXTO BASE</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <!-- Panel de Mantenimiento de Computadoras -->
+        <div class="recuadro">
+            <h2>MANTENIMIENTO DE COMPUTADORAS</h2>
+            <div class="enlaces">
+                <div class="enlace">
+                    <a href="#">
+                        <img src="GUIA.jpg" alt="Guía de Estudio">
+                        <h3>GUÍA DE ESTUDIO</h3>
+                    </a>
+                </div>
+                <div class="enlace">
+                    <a href="#">
+                        <img src="SILABO.jfif" alt="Sílabo">
+                        <h3>SÍLABO</h3>
+                    </a>
+                </div>
+                <div class="enlace">
+                    <a href="#">
+                        <img src="TEXTO.png" alt="Texto Base">
+                        <h3>TEXTO BASE</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+   
+    </div>
+
+    <footer>
+        <hr>
+        <div class = "pie">
+        <p> PERIODO ACADÉMICO MARZO - AGOSTO 2025</p>
+        <p> AUTOR: PABLO CORDOVA</p>
+        <p>VERSIÓN 2.0</p>
+        <img src="copy.png" class="copy" alt="copy UNL">
+    </div>
+        <hr>
+        </div>
+        <figure>
+            <video controls preload="auto" 
+            src="case.mp4">
+            </video>
+        </figure>
+        <video controls preload="auto"
+             src="bios.mp4">
+        </video>
+        <div class="videoin">
+            <figure> 
+                <video controls preload="auto">
+                <source src="case.mp4"/>
+                Navegador no puede reproducir video
+                </video>
+                <video controls preload="auto">
+                    <source src="bios.mp4"/>
+                    Navegador no puede reproducir video
+                    </video>
+                    <figcaption> VIDEOS DE ARMADO DE PCS</figcaption>
+            </figure>
+
+        </div>
+        
+    </footer>
+
+</body>
+</html>
